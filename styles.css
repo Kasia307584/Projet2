@@ -1,0 +1,267 @@
+body, html {
+    font-family: 'Raleway', sans-serif;
+}
+.contenu {
+    margin: 2em;
+}
+
+header .logo {
+    float: left;
+}
+nav ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.menu > li {  
+    padding: 1.5em;
+}
+nav a {
+    text-decoration: none;
+}
+#hebergement {
+    color: #0065FC;
+    border-top: solid 1px;
+    padding-top: 2.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#sinscrire {
+    color: #0065FC;
+    font-weight: bold;
+}
+#activite {
+    color: black;
+}
+
+#titre1 {
+    font-size: large;
+    margin-bottom: 0.3em;
+}
+#titre2 {
+    margin-top: 0;
+}
+.fa-map-marker-alt {
+    padding: 1em;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#champs-recherche {
+    padding: 1.1em;
+    border: solid 1px #F2F2F2;
+}
+#bouton-recherche {
+    padding: 1.3em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065FC;
+    border: none;
+    color: white;
+}
+
+#filtres {
+    display: inline-block;
+    font-weight: bold;
+}
+.filtres-liste {
+    display: inline-block;
+}
+.filtres-liste > li {
+    display: inline-block;
+    list-style: none;
+}
+.bouton-filtre {
+    padding: 1em;
+    padding-left: 3em;
+    border-radius: 50px;
+    border: solid 1px #F2F2F2;
+    background-color: transparent;
+    font-weight: bold;
+}
+.icone {
+    padding: 0.5em;
+    border-radius: 50px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+.fa-info {
+    border: solid 1px #F2F2F2;
+    padding: 0.5em;
+    border-radius: 50px;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 2em 0em 2em 0em;
+    justify-content: center;
+
+}
+.titre-article {
+    margin-left: 1em;
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+.hebergements {
+    background-color: #F2F2F2;
+    margin-right: 2em; 
+    border-radius: 15px;
+}
+.offres { /* peut etre je doit definir l'hauteur en pourcentage */
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: flex-start;
+    justify-content: space-around;        
+}
+.offre-hotel { /* taille en pourcentage de moins 33% (largeur) 45% (hauteur) */
+    width: 28%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 1em 1em 1em 1em;
+    padding: 0.3em;
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+}
+.image-hebergements { /* taille en pourcentage 55% (hauteur) */
+    height: 55%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.titre-offre {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+.nuit-prix {
+    margin-top: 0;
+}
+.prix {
+    font-weight: bold;
+}
+#afficher-plus {
+    font-weight: bold;
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.description {
+    padding-left: 1em;
+    padding-top: 1em; 
+}
+.bleu {
+    color: #0065FC;
+}
+.gris {
+    color: #F2F2F2;
+}
+
+.populaires {
+    background-color: #F2F2F2; 
+    border-radius: 15px;
+}
+.offres2 {
+    height: 85%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.populaires-header {
+    display: flex;
+    justify-content: space-between;
+}
+.fa-chart-line:nth-child(2) {
+    align-self: flex-end;
+    margin-right: 1.5em;
+}
+.offre-hotel-2 { /* definir la taille (hauteur de moins 33%) */
+    height: 30%;
+    width: 85%;
+    display: flex;
+    background-color: white;
+    margin: 1em 1em 1em 1em;
+    padding: 0.3em; 
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+}
+.image-populaires {
+    width: 40%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.note {
+    display: flex;
+    flex-direction: column;
+}
+.etoiles:nth-child(2) {
+    align-self: flex-end;
+}
+    
+
+
+.activites {
+    margin-bottom: 4em;  
+}
+.fiches { /* definir heuteur 90% et peut etre ajouter l'hauteur (et la largeur) de colonne */
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: flex-start;
+    justify-content: space-between; 
+}
+.column {
+    height: 90%;
+    width: 23%;
+    
+}
+.fiche-grand { 
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+}
+.fiche-petit {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+}
+.image-activite {
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.titre-activite {
+    font-weight: bold;
+    padding-left: 1em; 
+}
+
+
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    
+}
+.liste {
+    flex: 1;
+    line-height: 1.5;
+}
+.titre-footer {
+    font-weight: bold;
+    line-height: 2.5;
+}
+
+li {
+    list-style: none;
+}
