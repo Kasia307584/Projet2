@@ -1,25 +1,27 @@
 body, html {
     font-family: 'Raleway', sans-serif;
 }
-.contenu {
-    margin: 2em;
-}
 
-header .logo {
+
+/* header .logo {
     float: left;
-}
-nav ul {
+} */
+.logo:nth-child(1) {
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-start;
+}
+.bar-menu:nth-child(2) {
+    display: flex;
     justify-content: flex-end;
 }
-.menu > li {  
-    padding: 1.5em;
+
+.menu {
+    display: flex;
 }
-nav a {
-    text-decoration: none;
-}
-#hebergement {
+
+
+
+/* #hebergement {
     color: #0065FC;
     border-top: solid 1px;
     padding-top: 2.5em;
@@ -32,7 +34,7 @@ nav a {
 }
 #activite {
     color: black;
-}
+} */
 
 #titre1 {
     font-size: large;
@@ -70,7 +72,7 @@ nav a {
 .filtres-liste > li {
     display: inline-block;
     list-style: none;
-    margin-right: 1em;
+    /* margin-right: 1em; */
 }
 .bouton-filtre {
     border: none;
@@ -105,35 +107,30 @@ nav a {
 .section1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 2em 0em 2em 0em;
-    justify-content: center;
+    grid-gap: 2em;
     
 
 }
 .titre-article {
-    margin-left: 1em;
-    margin-bottom: 0;
-    margin-top: 2em;
+    padding-left: 1.5em;
 }
 .hebergements {
     background-color: #F2F2F2;
-    margin-right: 2em; 
+    /* margin-right: 2em;  */
     border-radius: 15px;
 }
 .offres { /* peut etre je doit definir l'hauteur en pourcentage */
-    height: 85%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;  
-    align-items: flex-start;
     justify-content: space-around;        
 }
 .offre-hotel { /* taille en pourcentage de moins 33% (largeur) 45% (hauteur) */
     width: 28%;
-    height: 45%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 1em 1em 1em 1em;
     padding: 0.3em;
     border-radius: 15px;
     box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
@@ -148,7 +145,7 @@ nav a {
 .titre-offre {
     font-weight: bold;
     margin-bottom: 0.3em;
-    margin-top: 0.3em;
+    /* margin-top: 0.3em; */
 }
 .nuit-prix {
     margin-top: 0;
@@ -156,10 +153,10 @@ nav a {
 .prix {
     font-weight: bold;
 }
-#afficher-plus {
+#afficher-plus:nth-child(7) {
     font-weight: bold;
-    margin-left: 1.5em;
-    margin-bottom: 2em;
+    padding-left: 1.5em;
+    width: 100%;
 }
 a {
     text-decoration: none;
@@ -185,6 +182,7 @@ a {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    justify-content: space-between;
 }
 .populaires-header {
     display: flex;
@@ -192,14 +190,14 @@ a {
 }
 .fa-chart-line:nth-child(2) {
     align-self: flex-end;
-    margin-right: 1.5em;
+    padding-right: 1.5em;
 }
 .offre-hotel-2 { /* definir la taille (hauteur de moins 33%) */
     height: 30%;
     width: 85%;
     display: flex;
     background-color: white;
-    margin: 1em 1em 1em 1em;
+    
     padding: 0.3em; 
     border-radius: 15px;
     box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
@@ -221,8 +219,8 @@ a {
 
 
 .activites {
-    margin-bottom: 4em;  
-    height: 700px;
+    padding-bottom: 4em;  
+    height: 600px;
 }
 .fiches { /* definir heuteur 90% et peut etre ajouter l'hauteur (et la largeur) de colonne */
     height: 100%;
@@ -231,13 +229,26 @@ a {
     align-items: flex-start;
     justify-content: space-between; 
 }
-.column {
+/* .column {
+    height: 100%;
+    width: 23%;
+    
+} */
+.column-petit {
+    height: 100%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.column-grand {
     height: 100%;
     width: 23%;
     
 }
 .fiche-grand { 
-    height: 94%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
@@ -249,7 +260,7 @@ a {
     flex-direction: column;
     box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
     border-radius: 15px;
-    margin-bottom: 3em;
+    /* margin-bottom: 3em; */
     padding-bottom: 2em;
 }
 .image-activite {
