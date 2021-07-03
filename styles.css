@@ -43,6 +43,12 @@ body, html {
 #titre2 {
     margin-top: 0;
 }
+.moteur-recherche {
+    border-radius: 50px;
+    border-top: solid #F2F2F2 1px;
+    border-bottom: solid #F2F2F2 1px;
+    display: inline-block;
+}
 .fa-map-marker-alt {
     padding: 1em;
     background-color: #F2F2F2;
@@ -50,8 +56,10 @@ body, html {
     border-bottom-left-radius: 15px;
 }
 #champs-recherche {
-    padding: 1.1em;
-    border: solid 1px #F2F2F2;
+    border: none;
+}
+input {
+    font-weight: bold
 }
 #bouton-recherche {
     padding: 1.3em;
@@ -60,6 +68,9 @@ body, html {
     background-color: #0065FC;
     border: none;
     color: white;
+}
+i.fa-search {
+    display: none;
 }
 
 #filtres {
@@ -127,7 +138,7 @@ body, html {
 }
 .offre-hotel { /* taille en pourcentage de moins 33% (largeur) 45% (hauteur) */
     width: 28%;
-    height: 35%;
+    height: 27%;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -162,10 +173,10 @@ a {
     text-decoration: none;
     color: black;
 }
-.description {
+/* .description {
     padding-left: 1em;
-    padding-top: 1em; 
-}
+    padding-top: 1em;
+} */
 .bleu {
     color: #0065FC;
 }
@@ -197,7 +208,6 @@ a {
     width: 85%;
     display: flex;
     background-color: white;
-    
     padding: 0.3em; 
     border-radius: 15px;
     box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
@@ -332,7 +342,20 @@ li {
         border-bottom: solid 1px;
         padding: 0em 3em ;
     }
-
+    
+    #bouton-recherche {
+        display: none;
+    }
+    i.fa-search {
+        display: inline-block;
+        color: white;
+        background-color: #0065FC;
+        padding: 1em;
+        border-radius: 15px;
+    }
+    ul.filtres-liste {
+        padding: 0;
+    }
     .fa-info {
         float: left;
     }
@@ -407,10 +430,5 @@ li {
 
     footer {
         display: flex;
-        /* flex-direction: column; */
-        flex-wrap: wrap; 
+        flex-direction: column;
     }
-    
-    
-    
-    
