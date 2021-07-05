@@ -236,27 +236,18 @@ a {
 .fiches { /* definir heuteur 90% et peut etre ajouter l'hauteur (et la largeur) de colonne */
     height: 90%;
     display: flex;
-    /* flex-wrap: wrap;  
-    align-items: flex-start; */
     justify-content: space-between; 
 }
-/* .column {
-    height: 100%;
-    width: 23%;
-    
-} */
 .column-petit {
     height: 100%;
     width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 .column-grand {
     height: 100%;
     width: 23%;
-    
 }
 .fiche-grand { 
     height: 100%;
@@ -365,53 +356,61 @@ li {
         display: flex;
         flex-direction: column;
     }
-    .offres {
-        display: flex;
-        flex-direction: column;
-    }
     .aside:nth-child(2) {
         order: 1;
     }
     .hebergements:nth-child(1) {
         order: 2;
     }
+    .hebergements {
+        background-color: white;
+    }
+    .offres {
+        display: flex;
+        flex-direction: column;
+    }
     .offre-hotel { 
         width: 98%;
         height: 14em;
+    }
+    
+    .populaires {
+        border-radius: 0px;
+    }
+    .offres2 {
+  
     }
     .offre-hotel-2 { 
         width: 90%;
         height: 9em;
     }
-    .populaires {
-        border-radius: 0px;
-    }
-    .hebergements {
-        background-color: white;
-    }
+    
+    
 
     .activites {
         height: auto;
     }
     .fiches {
-        display: flex;
-        flex-wrap: wrap;
-        /* flex-direction: column; */
-        /*justify-content: center; */
-        /* align-items: stretch; */
-        /* align-content: center; */
+        flex-direction: column;
+        height: auto;
+    }
+    .column-grand {
+        width: auto;
+        height: 14em; /* 15% => pourcentage ne marche pas */
     }
     .column-petit {
-        width: 100%;
+        width: auto;
+        height: 28em; /* 30% => pourcentage ne marche pas */
     } 
-    .column-grand {
-        width: 100%;
-    }
     .fiche-grand { 
         height: 100%;
     }
     .fiche-petit {
-        height: 5em;
+        height: 50%;
+        padding-bottom: 0;
+    }
+    .image-activite {
+        height: 70%;
     }
 
     footer {
