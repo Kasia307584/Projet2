@@ -35,7 +35,9 @@ body, html {
 #activite {
     color: black;
 } */
-
+.haut-de-page {
+    height: 500px;
+}
 #titre1 {
     font-size: large;
     margin-bottom: 0.3em;
@@ -123,6 +125,7 @@ i.fa-search {
     padding-left: 1.5em;
 }
 .hebergements {
+    height: 800px;
     background-color: #F2F2F2;
     /* margin-right: 2em;  */
     border-radius: 15px;
@@ -182,6 +185,7 @@ a {
 }
 
 .populaires {
+    height: 800px;
     background-color: #F2F2F2; 
     border-radius: 15px;
 }
@@ -278,7 +282,6 @@ a {
 footer {
     display: flex;
     background-color: #F2F2F2;
-    
 }
 .liste {
     flex: 1;
@@ -293,6 +296,29 @@ li {
     list-style: none;
 }
 
+@media screen and (max-width: 70em) {
+    .section1 {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergements {
+        height: 600px;
+    }
+    .offre-hotel {
+        height: 40%;
+    }
+    .populaires {
+        height: 200px;
+    }
+    .offres2 {
+        flex-direction: row;
+    }
+    .offre-hotel-2 {
+        height: 80%;
+    }
+}
+
 @media screen and (max-width: 40em) {
     .contenu {
         margin: 0em;   
@@ -304,8 +330,7 @@ li {
     } */
     .menu {
         display: flex;
-        flex-wrap: wrap-reverse;
-        
+        flex-wrap: wrap-reverse;   
     } 
     /* .menu1:nth-child(1) {
         justify-self: flex-start;
@@ -352,28 +377,29 @@ li {
         float: left;
     }
 
-    .section1 {
-        display: flex;
-        flex-direction: column;
-    }
     .titre-article {
         padding-left: 0;
     }
     .hebergements {
+        height: auto;
         background-color: white;
     }
     .offres {
+        height: auto;
         flex-direction: column;
     }
     .offre-hotel { 
-        width: 98%;
-        height: 14em;
+        width: 100%;
+        height: 14em; /* 15% marche pas */
     }
     
     .populaires {
+        height: auto;
         border-radius: 0px;
     }
     .offres2 {
+        height: auto;
+        flex-direction: column; 
     }
     .offre-hotel-2 { 
         width: 90%;
@@ -414,13 +440,3 @@ li {
     }
 }
 
-@media screen and (max-width: 70em) {
-    .section1 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .offres2 {
-        flex-direction: row;
-    }
-}
