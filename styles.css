@@ -125,20 +125,19 @@ i.fa-search {
     padding-left: 1.5em;
 }
 .hebergements {
-    height: 800px;
+    height: 700px;
     background-color: #F2F2F2;
-    /* margin-right: 2em;  */
     border-radius: 15px;
 }
 .offres { /* peut etre je doit definir l'hauteur en pourcentage */
-    height: 100%;
+    height: 85%;
     display: flex;
     flex-wrap: wrap;  
     justify-content: space-around;        
 }
 .offre-hotel { /* taille en pourcentage de moins 33% (largeur) 45% (hauteur) */
     width: 28%;
-    height: 27%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -164,10 +163,10 @@ i.fa-search {
 .prix {
     font-weight: bold;
 }
-#afficher-plus:nth-child(7) {
+#afficher-plus {
+    margin: 0;
     font-weight: bold;
     padding-left: 1.5em;
-    width: 100%;
 }
 a {
     text-decoration: none;
@@ -185,15 +184,16 @@ a {
 }
 
 .populaires {
-    height: 800px;
+    height: 700px;
     background-color: #F2F2F2; 
     border-radius: 15px;
 }
 .offres2 {
     height: 85%;
     display: flex;
-    flex-direction: column; 
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; 
     justify-content: space-between;
 }
 .populaires-header {
@@ -224,12 +224,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
 }
-/* .etoiles:nth-child(2) {
-    align-self: flex-end;
-} */
     
-
-
 .activites {
     /* padding-bottom: 4em;   */
     height: 600px;
@@ -296,30 +291,29 @@ li {
     list-style: none;
 }
 
-@media screen and (max-width: 70em) {
+@media screen and (max-width: 768px) {
     .section1 {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
     }
-    .hebergements {
-        height: 600px;
-    }
-    .offre-hotel {
-        height: 40%;
-    }
     .populaires {
-        height: 200px;
+        height: 250px;
     }
     .offres2 {
         flex-direction: row;
+        align-items: flex-start;
     }
     .offre-hotel-2 {
-        height: 80%;
+        width: 30%;
+        height: 70%;
+    }
+    p {
+        font-size: smaller;
     }
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 414px) {
     .contenu {
         margin: 0em;   
     }
@@ -385,12 +379,15 @@ li {
         background-color: white;
     }
     .offres {
-        height: auto;
-        flex-direction: column;
+        /* flex-direction: column; */
+        margin-top: 1em;
     }
     .offre-hotel { 
         width: 100%;
-        height: 14em; /* 15% marche pas */
+        margin-bottom: 1em;
+    }
+    .image-hebergements {
+        height: 8em;
     }
     
     .populaires {
@@ -399,11 +396,13 @@ li {
     }
     .offres2 {
         height: auto;
-        flex-direction: column; 
     }
     .offre-hotel-2 { 
-        width: 90%;
-        height: 9em;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .image-populaires {
+        height: 8em;
     }
     
     
@@ -417,21 +416,22 @@ li {
     }
     .column-grand {
         width: 100%;
-        height: 14em; /* 15% => pourcentage ne marche pas */
+        margin-bottom: 1em;
     }
     .column-petit {
         width: 100%;
-        height: 28em; /* 30% => pourcentage ne marche pas */
+        
     } 
     .fiche-grand { 
         height: 100%;
     }
     .fiche-petit {
-        height: 50%;
+        height: auto;
         padding-bottom: 0;
+        margin-bottom: 1em;
     }
     .image-activite {
-        height: 70%;
+        height: 8em;
     }
 
     footer {
