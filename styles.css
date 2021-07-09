@@ -1,45 +1,62 @@
 body, html {
     font-family: 'Raleway', sans-serif;
+    max-width: 1440px;
+	margin: auto;
+}
+header, section {
+    margin: 2em;
+}
+h1 {
+    font-size: large;
+}
+h1, #sinscrire, input, #filtres, .bouton-filtre, .titre-offre, .prix, #afficher-plus, .titre-activite, .titre-footer {
+    font-weight: bold
+}
+li {
+    list-style: none;
 }
 
 
-/* header .logo {
-    float: left;
-} */
-.logo:nth-child(1) {
+
+
+header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
-.bar-menu:nth-child(2) {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .menu {
     display: flex;
 }
-
-
-
-/* #hebergement {
+.menu-2-elements {
+    display: flex;
+    margin-right: 40px;
+}
+.menu-2-elements a {
+    padding: 0 25px 0 25px;
+}
+.element:hover {
     color: #0065FC;
     border-top: solid 1px;
-    padding-top: 2.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: 30px;
+    margin-top: -30px;
 }
 #sinscrire {
     color: #0065FC;
-    font-weight: bold;
 }
-#activite {
-    color: black;
+/* #hebergement:nth-child(1) {
+    align-self: flex-end;
+}
+#activite:nth-child(2) {
+    align-self: flex-end;
+}
+.menu-1-element:nth-child(3) {
+    align-self: flex-end;
+    align-self: center;
 } */
-.haut-de-page {
-    height: 500px;
-}
+
+
 #titre1 {
-    font-size: large;
     margin-bottom: 0.3em;
 }
 #titre2 {
@@ -60,9 +77,6 @@ body, html {
 #champs-recherche {
     border: none;
 }
-input {
-    font-weight: bold
-}
 #bouton-recherche {
     padding: 1.3em;
     border-top-right-radius: 15px;
@@ -75,22 +89,12 @@ i.fa-search {
     display: none;
 }
 
-#filtres {
+#filtres, .filtres-liste, .filtres-liste li {
     display: inline-block;
-    font-weight: bold;
-}
-.filtres-liste {
-    display: inline-block;
-}
-.filtres-liste > li {
-    display: inline-block;
-    list-style: none;
-    /* margin-right: 1em; */
 }
 .bouton-filtre {
     border: none;
     background-color: transparent;
-    font-weight: bold;
     margin-right: 0.5em;
 }
 .filtre {
@@ -107,21 +111,27 @@ i.fa-search {
     padding: 0.6em;
     border-radius: 50px;
 }
+.filtre:hover {
+    background-color: #F2F2F2;
+}
+.info {
+    display: flex;
+    align-items: baseline;
+}
 .fa-info {
     border: solid 1px #F2F2F2;
     padding: 0.5em;
     border-radius: 50px;
     color: #0065FC;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
-.info {
-    padding-bottom: 1em;
-}
-.section1 {
+.section-2-articles {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 2em;
 }
-.titre-article {
+.titre-en-padding {
     padding-left: 1.5em;
 }
 .hebergements {
@@ -153,19 +163,14 @@ i.fa-search {
 }
 
 .titre-offre {
-    font-weight: bold;
     margin-bottom: 0.3em;
     /* margin-top: 0.3em; */
 }
 .nuit-prix {
     margin-top: 0;
 }
-.prix {
-    font-weight: bold;
-}
 #afficher-plus {
     margin: 0;
-    font-weight: bold;
     padding-left: 1.5em;
 }
 a {
@@ -268,7 +273,6 @@ a {
     border-top-right-radius: 15px;
 }
 .titre-activite {
-    font-weight: bold;
     padding-left: 1em; 
     /* border: solid; */
 }
@@ -283,16 +287,13 @@ footer {
     line-height: 1.5;
 }
 .titre-footer {
-    font-weight: bold;
     line-height: 2.5;
 }
 
-li {
-    list-style: none;
-}
+
 
 @media screen and (max-width: 768px) {
-    .section1 {
+    .section-2-articles {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
@@ -314,8 +315,13 @@ li {
 }
 
 @media screen and (max-width: 414px) {
-    .contenu {
-        margin: 0em;   
+    /* header, section {
+        margin-left: 0;
+        margin-right: 0; 
+    } */
+    footer, .populaires {
+        margin-left: 0;
+        margin-right: 0; 
     }
     /* .logo {
         display: inline-block; 
@@ -367,11 +373,8 @@ li {
     ul.filtres-liste > li {
         margin-bottom: 1em;
     }
-    .fa-info {
-        float: left;
-    }
 
-    .titre-article {
+    .titre-en-padding {
         padding-left: 0;
     }
     .hebergements {
@@ -393,16 +396,22 @@ li {
     .populaires {
         height: auto;
         border-radius: 0px;
+        margin-left: -2em;
+        margin-right: -2em;
     }
     .offres2 {
         height: auto;
+        justify-content: center;
     }
     .offre-hotel-2 { 
-        width: 100%;
+        width: 80%;
         margin-bottom: 1em;
     }
     .image-populaires {
         height: 8em;
+    }
+    #populaires {
+        padding-left: 10%;
     }
     
     

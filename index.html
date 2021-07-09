@@ -14,20 +14,17 @@
     <body>
         
         <header>
-            <div class="menu">
                 <div class="logo">
                     <img src="images/logo/Reservia.svg">
-                </div>
-                <div class="bar-menu">
+                </div>    
+                <div class="menu">            
                     <div class="menu-2-elements">
-                        <a href="#hebergements" id="hebergement">Hébergements</a>
-                        <a href="#activites" id="activite">Activités</a>
+                        <a href="#hebergements" class="element">Hébergements</a> 
+                        <a href="#activites" class="element">Activités</a> 
                     </div>
-                    <div class="menu-1-element">
-                        <a href="" id="sinscrire">S'inscrire</a>
+                    <div class="menu-1-element" id="sinscrire">S'inscrire</a>
                     </div>
                 </div>
-            </div>
         </header>
 
         <section>
@@ -37,7 +34,7 @@
             
             <div class="filtres">
                 <p id="filtres">Filtres</p>
-                <ul class="filtres-liste"> <!-- Je peux utiliser ici soit la liste, soit les div-->
+                <ul class="filtres-liste"> 
                     <li class="filtre"><span class="icone"><i class="fas fa-money-bill-wave"></i></span><button class="bouton-filtre">Économique</button></li>
                     <li class="filtre"><span class="icone"><i class="fas fa-child"></i></span><button class="bouton-filtre">Familial</button></li>
                     <li class="filtre"><span class="icone"><i class="fas fa-heart"></i></span><button class="bouton-filtre">Romantique</button></li>
@@ -50,10 +47,9 @@
             </div>
         </section>
 
-        <section class="section1">
+        <section class="section-2-articles">
                 <article class="hebergements"> 
-                        <h1 class="titre-article">Hébergements à Marseille</h1> 
-                        
+                        <h1 class="titre-article titre-en-padding" id="hebergements">Hébergements à Marseille</h1> 
                         <div class="offres">
                             <a href="" class="offre-hotel">
                                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="image-hebergements">
@@ -131,8 +127,8 @@
                     <p id="afficher-plus">Afficher plus</p>    
                         
                 </article>
-                <aside class="populaires">
-                        <div class="populaires-header"><h1 class="titre-article">Les plus populaires</h1>
+                <article class="populaires">
+                        <div class="populaires-header"><h1 class="titre-article titre-en-padding" id="populaires">Les plus populaires</h1>
                         <i class="fas fa-chart-line"></i></div>
                         <div class="offres2">
                             <a href="" class="offre-hotel-2">
@@ -184,11 +180,11 @@
                                 </div>
                             </a>
                         </div>
-                </aside>
+                </article>
         </section>
 
         <section class="activites">
-            <h1 id="activites">Activités à Marseille</h1>
+            <h1 class="titre-article" id="activites">Activités à Marseille</h1>
             
             <div class="fiches">
                 <div class="column-grand">
@@ -227,7 +223,6 @@
         </section>
         
         <footer>
-            
                 <ul class="liste">
                     <li><span class="titre-footer">A propos</span></li>
                     <li>Fonctionnement du site</li>
@@ -248,8 +243,7 @@
                     <li>Centre d'aide</li>
                     <li>Nous contacter</li>
                 </ul>
-          
         </footer>
-    
+
     </body>
 </html>
