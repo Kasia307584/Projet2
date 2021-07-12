@@ -4,12 +4,12 @@ body, html {
 	margin: auto;
 }
 header, section {
-    margin: 2em;
+    /* margin: 2em; */
 }
 h1 {
     font-size: large;
 }
-h1, #sinscrire, input, #filtres, .bouton-filtre, .titre-offre, .prix, #afficher-plus, .titre-activite, .titre-footer {
+h1, .sinscrire, input, #filtres, .bouton-filtre, .titre-offre, .prix, #afficher-plus, .titre-activite, .titre-footer {
     font-weight: bold
 }
 li {
@@ -22,38 +22,31 @@ li {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
 }
 .menu {
     display: flex;
 }
-.menu-2-elements {
+nav ul {
     display: flex;
-    margin-right: 40px;
+    align-items: center;
 }
-.menu-2-elements a {
-    padding: 0 25px 0 25px;
+nav a {
+    padding-left: 2em;
+    padding-right: 2em;
 }
-.element:hover {
+.sinscrire {
+    display: flex;
+    align-items: center;
+    color: #0065FC;
+    padding-left: 2em;
+}
+nav a:hover {
     color: #0065FC;
     border-top: solid 1px;
     padding-top: 30px;
     margin-top: -30px;
 }
-#sinscrire {
-    color: #0065FC;
-}
-/* #hebergement:nth-child(1) {
-    align-self: flex-end;
-}
-#activite:nth-child(2) {
-    align-self: flex-end;
-}
-.menu-1-element:nth-child(3) {
-    align-self: flex-end;
-    align-self: center;
-} */
 
 
 #titre1 {
@@ -116,7 +109,8 @@ i.fa-search {
     border-radius: 50px;
 }
 .filtre:hover {
-    background-color: #F2F2F2;
+    border: 2px 2px 2px 0px;
+    border-color: #0065FC;
 }
 .info {
     display: flex;
@@ -143,13 +137,13 @@ i.fa-search {
     background-color: #F2F2F2;
     border-radius: 15px;
 }
-.offres { /* peut etre je doit definir l'hauteur en pourcentage */
+.offres { 
     height: 85%;
     display: flex;
     flex-wrap: wrap;  
     justify-content: space-around;        
 }
-.offre-hotel { /* taille en pourcentage de moins 33% (largeur) 45% (hauteur) */
+.offre-hotel { 
     width: 28%;
     height: 40%;
     display: flex;
@@ -159,7 +153,7 @@ i.fa-search {
     border-radius: 15px;
     box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
 }
-.image-hebergements { /* taille en pourcentage 55% (hauteur) */
+.image-hebergements { 
     height: 55%;
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -168,7 +162,6 @@ i.fa-search {
 
 .titre-offre {
     margin-bottom: 0.3em;
-    /* margin-top: 0.3em; */
 }
 .nuit-prix {
     margin-top: 0;
@@ -212,7 +205,7 @@ a {
     align-self: center;
     padding-right: 1.5em;
 }
-.offre-hotel-2 { /* definir la taille (hauteur de moins 33%) */
+.offre-hotel-2 { 
     height: 30%;
     width: 85%;
     display: flex;
@@ -234,10 +227,9 @@ a {
 }
     
 .activites {
-    /* padding-bottom: 4em;   */
     height: 600px;
 }
-.fiches { /* definir heuteur 90% et peut etre ajouter l'hauteur (et la largeur) de colonne */
+.fiches { 
     height: 90%;
     display: flex;
     justify-content: space-between; 
@@ -266,7 +258,6 @@ a {
     flex-direction: column;
     box-shadow: 6px 6px 20px rgba(128, 128, 128, 0.5);
     border-radius: 15px;
-    /* margin-bottom: 3em; */
     padding-bottom: 2em;
 }
 .image-activite {
@@ -277,7 +268,6 @@ a {
 }
 .titre-activite {
     padding-left: 1em; 
-    /* border: solid; */
 }
 
 
@@ -296,6 +286,7 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+
     .section-2-articles {
         height: auto;
         display: flex;
@@ -317,69 +308,47 @@ footer {
     }
 }
 
-@media screen and (max-width: 414px) {
-    /* header, section {
-        margin-left: 0;
-        margin-right: 0; 
-    } */
+@media screen and (max-width: 514px) {
+    
     footer, .populaires {
         margin-left: 0;
         margin-right: 0; 
     }
-    /* .logo {
-        display: inline-block; 
-        position: absolute;
-        float: left;
-    } */
-    .menu {
-        flex-direction: column-reverse;
+    
+    header {
+        display: block;
         width: 100%;
-        align-items: flex-end;
-        
     } 
-    .menu-2-elements {
-        justify-content: space-around;
-        width: 100%;
-        margin-right: auto; 
+    header img {
+        display: block;
     }
-    .menu-2-elements a {
-        padding: 0 25px 10px 25px;
+    
+    nav {
+        width: 100%; 
+        margin-top: 15px;
     }
-    .element {
-        border-bottom: 2px solid #F2F2F2;
-        width: 100%;
+    nav a {
+        display: block;
         text-align: center;
-        margin: 0 -40px 0 -130px;
+        padding: 0px 0px 20px 0px;
+        border-bottom: 1px solid grey;
     }
-    .element:hover {
-        border-bottom: 2px solid #0065FC;
+    .sinscrire {
+        position: absolute;
+        top: 2em;
+        right: 1.5em;
     }
-    .menu-1-element {
-        margin-bottom: 30px;
+    nav ul {
+        padding-left: 0px;
     }
-    .logo {
-        margin-bottom: 65px;
+    nav li {
+        width: 50%;
     }
-    #heb {
-        padding-right: 80px;
-    }
-    #act {
-        padding-left: 80px;
-    }
-    /* .menu1:nth-child(1) {
-        justify-self: flex-start;
-       
-    } */
-    /* .menu2:nth-child(2) {
-        order: 3;
-    }
-    .menu3:nth-child(3) {
-        order: 1;
-        position: relative;
-        display: inline;
-        margin-left: 40px;
-    } */
-
+    nav a:hover{
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+        color: #0065FC;
+      }
     
     #titre2 {
         margin-top: 0;
@@ -410,7 +379,6 @@ footer {
         background-color: white;
     }
     .offres {
-        /* flex-direction: column; */
         margin-top: 1em;
     }
     .offre-hotel { 
