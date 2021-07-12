@@ -15,6 +15,10 @@ h1, .sinscrire, input, #filtres, .bouton-filtre, .titre-offre, .prix, #afficher-
 li {
     list-style: none;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
 
 
@@ -170,10 +174,6 @@ i.fa-search {
     margin: 0;
     padding-left: 1.5em;
 }
-a {
-    text-decoration: none;
-    color: black;
-}
 .description, .etoiles {
     padding-left: 10px;
 }
@@ -282,8 +282,25 @@ footer {
 .titre-footer {
     line-height: 2.5;
 }
-
-
+@media all and (max-width: 1024px) {
+    .offre-hotel {
+        width: 45%;
+        height: 30%;
+    }
+    p {
+        font-size: smaller;
+    }
+    .fiche-grand {
+        height: 65%;
+        margin-top: 5em;
+    }
+    .fiche-petit {
+        padding-bottom: 1em;
+    }
+    .image-activite {
+        height: 85%;
+    }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -307,8 +324,63 @@ footer {
         font-size: smaller;
     }
 }
+@media screen and (max-width: 662px) {
+    .populaires {
+        height: auto;
+        border-radius: 0px;
+        margin-left: -2em;
+        margin-right: -2em;
+    }
+    .offres2 {
+        height: auto;
+        justify-content: center;
+    }
+    .offre-hotel-2 { 
+        width: 80%;
+        margin-bottom: 1em;
+    }
+    .image-populaires {
+        height: 8em;
+    }
+    #populaires {
+        padding-left: 10%;
+    }
 
-@media screen and (max-width: 514px) {
+    .activites {
+        height: auto;
+    }
+    .fiches {
+        flex-direction: column;
+        height: auto;
+    }
+    .column-grand {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .column-petit {
+        width: 100%;
+        
+    } 
+    .fiche-grand { 
+        height: 100%;
+        margin-top: auto;
+    }
+    .fiche-petit {
+        height: auto;
+        padding-bottom: 0;
+        margin-bottom: 1em;
+    }
+    .image-activite {
+        height: 8em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 414px) {
     
     footer, .populaires {
         margin-left: 0;
@@ -348,7 +420,7 @@ footer {
         border-top: none;
         border-bottom: 1px solid #0065FC;
         color: #0065FC;
-      }
+    }
     
     #titre2 {
         margin-top: 0;
@@ -410,14 +482,11 @@ footer {
         padding-left: 10%;
     }
     
-    
-
     .activites {
         height: auto;
     }
     .fiches {
         flex-direction: column;
-        height: auto;
     }
     .column-grand {
         width: 100%;
@@ -429,6 +498,7 @@ footer {
     } 
     .fiche-grand { 
         height: 100%;
+        margin-top: auto;
     }
     .fiche-petit {
         height: auto;
