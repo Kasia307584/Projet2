@@ -4,12 +4,15 @@ body, html {
 	margin: auto;
 }
 header, section {
-    /* margin: 2em; */
+    margin: 2em;
 }
 h1 {
     font-size: large;
 }
-h1, .sinscrire, input, #filtres, .bouton-filtre, .titre-offre, .prix, #afficher-plus, .titre-activite, .titre-footer {
+h2 {
+    font-size: medium;
+}
+h1, h2, .sinscrire, input, #filtres, .bouton-filtre, .titre-offre, .prix, .titre-activite, .titre-footer {
     font-weight: bold
 }
 li {
@@ -282,13 +285,19 @@ footer {
 .titre-footer {
     line-height: 2.5;
 }
-@media all and (max-width: 1024px) {
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    .section-2-articles {
+        grid-gap: 1em;
+    }
     .offre-hotel {
         width: 45%;
         height: 30%;
     }
     p {
         font-size: smaller;
+    }
+    #afficher-plus {
+        margin-top: 1em;
     }
     .fiche-grand {
         height: 65%;
@@ -303,11 +312,23 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
+    header, section {
+        margin: 1em;
+    }
     .section-2-articles {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
+    }
+    .activites {
+        margin-top: 2em;
+    }
+    .offre-hotel {
+        width: 45%;
+        height: 30%;
+    }
+    #afficher-plus {
+        margin-top: 1em;
     }
     .populaires {
         height: 250px;
@@ -323,8 +344,66 @@ footer {
     p {
         font-size: smaller;
     }
+    .fiche-grand {
+        height: 65%;
+        margin-top: 5em;
+    }
+    .fiche-petit {
+        padding-bottom: 1em;
+    }
+    .image-activite {
+        height: 85%;
+    }
 }
-@media screen and (max-width: 662px) {
+@media screen and (min-width: 415px) and (max-width: 662px) {
+    header {
+        display: block;
+        width: 100%;
+        margin: 0;
+    } 
+    header img {
+        display: block;
+        margin: 15px
+    } 
+    nav {
+        width: 90%;
+        margin: auto; 
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+        border-bottom: 1px solid grey;
+    }
+    .sinscrire {
+        position: absolute;
+        top: 2em;
+        right: 1.5em;
+    }
+    nav ul {
+        padding-left: 0px;
+    }
+    nav li {
+        width: 50%;
+    }
+    nav a:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+    .hebergements {
+        background-color: white;
+    }
+    #activites {
+        padding-left: 1.5em;
+    }
+    .offre-hotel {
+        width: 45%;
+        height: 30%;
+    }
+    #afficher-plus {
+        margin-top: 1em;
+    }
     .populaires {
         height: auto;
         border-radius: 0px;
@@ -354,12 +433,13 @@ footer {
         height: auto;
     }
     .column-grand {
-        width: 100%;
+        width: 90%;
+        align-self: center;
         margin-bottom: 1em;
     }
     .column-petit {
-        width: 100%;
-        
+        width: 90%;
+        align-self: center;
     } 
     .fiche-grand { 
         height: 100%;
@@ -381,23 +461,21 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
-    
     footer, .populaires {
         margin-left: 0;
         margin-right: 0; 
     }
-    
     header {
         display: block;
         width: 100%;
+        margin: 0;
     } 
     header img {
         display: block;
-    }
-    
+        margin: 15px
+    } 
     nav {
         width: 100%; 
-        margin-top: 15px;
     }
     nav a {
         display: block;
@@ -418,7 +496,7 @@ footer {
     }
     nav a:hover{
         border-top: none;
-        border-bottom: 1px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
         color: #0065FC;
     }
     
@@ -459,6 +537,9 @@ footer {
     }
     .image-hebergements {
         height: 8em;
+    }
+    #afficher-plus {
+        padding-left: 0;
     }
     
     .populaires {
