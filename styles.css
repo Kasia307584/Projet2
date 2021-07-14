@@ -1,3 +1,5 @@
+/* GENERATLITES - version desktop */
+
 body, html {
     font-family: 'Raleway', sans-serif;
     max-width: 1440px;
@@ -6,13 +8,13 @@ body, html {
 header, section {
     margin: 2em;
 }
-h1 {
+h1, h2 {
     font-size: large;
 }
-h2 {
+h3 {
     font-size: medium;
 }
-h1, h2, .sinscrire, input, #filtres, .bouton-filtre, .titre-offre, .prix, .titre-activite, .titre-footer {
+h1, h2, h3, .sinscrire, input, #filtres, .bouton-filtre, .titre-offre, .prix, .titre-activite, .titre-footer {
     font-weight: bold
 }
 li {
@@ -23,8 +25,7 @@ a {
     color: black;
 }
 
-
-
+/* HEADER - version desktop */
 
 header {
     display: flex;
@@ -55,6 +56,7 @@ nav a:hover {
     margin-top: -30px;
 }
 
+/* SECTION (SOUS-HEADER) - version desktop */
 
 #titre1 {
     margin-bottom: 0.3em;
@@ -116,7 +118,7 @@ i.fa-search {
     border-radius: 50px;
 }
 .filtre:hover {
-    border: 2px 2px 2px 0px;
+    border: 2px 2px;
     border-color: #0065FC;
 }
 .info {
@@ -131,6 +133,9 @@ i.fa-search {
     padding: 5px 10px;
     margin-right: 10px;
 }
+
+/* SECTION 2 ARTICLES - version desktop */
+
 .section-2-articles {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -139,6 +144,9 @@ i.fa-search {
 .titre-en-padding {
     padding-left: 1.5em;
 }
+
+/* ARTICLE HEBERGEMENTS - version desktop */
+
 .hebergements {
     height: 700px;
     background-color: #F2F2F2;
@@ -166,7 +174,6 @@ i.fa-search {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-
 .titre-offre {
     margin-bottom: 0.3em;
 }
@@ -186,6 +193,8 @@ i.fa-search {
 .gris {
     color: #F2F2F2;
 }
+
+/* ARTICLE POPULAIRES - version desktop */
 
 .populaires {
     height: 700px;
@@ -228,7 +237,9 @@ i.fa-search {
     flex-direction: column;
     justify-content: space-between;
 }
-    
+
+/* SECTION ACTIVITES - version desktop */
+
 .activites {
     height: 600px;
 }
@@ -273,6 +284,7 @@ i.fa-search {
     padding-left: 1em; 
 }
 
+/* FOOTER - version desktop */
 
 footer {
     display: flex;
@@ -285,7 +297,17 @@ footer {
 .titre-footer {
     line-height: 2.5;
 }
+
 @media all and (min-width: 769px) and (max-width: 1024px) {
+
+/* GENERALITES - version min 769 max 1024 */
+
+    p {
+        font-size: smaller;
+    }
+
+/* SECTION 2 ARTICLES - version min 769 max 1024 */
+
     .section-2-articles {
         grid-gap: 1em;
     }
@@ -293,12 +315,12 @@ footer {
         width: 45%;
         height: 30%;
     }
-    p {
-        font-size: smaller;
-    }
     #afficher-plus {
         margin-top: 1em;
     }
+
+/* SECTION ACTIVITES - version min 769 max 1024 */
+
     .fiche-grand {
         height: 65%;
         margin-top: 5em;
@@ -312,16 +334,22 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+/* GENERALITES - version tablette */
+
     header, section {
         margin: 1em;
     }
+    p {
+        font-size: smaller;
+    }
+
+/* SECTION 2 ARTICLES - version tablette */
+
     .section-2-articles {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
-    }
-    .activites {
-        margin-top: 2em;
     }
     .offre-hotel {
         width: 45%;
@@ -341,8 +369,11 @@ footer {
         width: 30%;
         height: 70%;
     }
-    p {
-        font-size: smaller;
+
+/* SECTION ACTIVITES - version tablette */
+
+    .activites {
+        margin-top: 2em;
     }
     .fiche-grand {
         height: 65%;
@@ -355,7 +386,11 @@ footer {
         height: 85%;
     }
 }
+
 @media screen and (min-width: 415px) and (max-width: 662px) {
+
+/* HEADER - version min 415px max 662px */
+
     header {
         display: block;
         width: 100%;
@@ -375,11 +410,6 @@ footer {
         padding: 0px 0px 20px 0px;
         border-bottom: 1px solid grey;
     }
-    .sinscrire {
-        position: absolute;
-        top: 2em;
-        right: 1.5em;
-    }
     nav ul {
         padding-left: 0px;
     }
@@ -391,6 +421,14 @@ footer {
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
     }
+    .sinscrire {
+        position: absolute;
+        top: 2em;
+        right: 1.5em;
+    }
+
+/* SECTION 2 ARTICLES - version min 415px max 662px */
+
     .hebergements {
         background-color: white;
     }
@@ -425,6 +463,8 @@ footer {
         padding-left: 10%;
     }
 
+/* SECTION ACTIVITES - version min 415px max 662px */
+
     .activites {
         height: auto;
     }
@@ -454,6 +494,8 @@ footer {
         height: 8em;
     }
 
+/* SECTION FOOTER - version min 415px max 662px */
+
     footer {
         display: flex;
         flex-direction: column;
@@ -461,10 +503,16 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
+
+/* GENERALITES - version mobile */
+
     footer, .populaires {
         margin-left: 0;
         margin-right: 0; 
     }
+
+/* HEADER - version mobile */
+
     header {
         display: block;
         width: 100%;
@@ -483,11 +531,6 @@ footer {
         padding: 0px 0px 20px 0px;
         border-bottom: 1px solid grey;
     }
-    .sinscrire {
-        position: absolute;
-        top: 2em;
-        right: 1.5em;
-    }
     nav ul {
         padding-left: 0px;
     }
@@ -499,6 +542,13 @@ footer {
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
     }
+    .sinscrire {
+        position: absolute;
+        top: 2em;
+        right: 1.5em;
+    }
+
+/* SECTION (SOUS-HEADER) - version mobile */
     
     #titre2 {
         margin-top: 0;
@@ -521,6 +571,8 @@ footer {
         margin-bottom: 1em;
     }
 
+/* SECTION 2 ARTICLES - version mobile */
+
     .titre-en-padding {
         padding-left: 0;
     }
@@ -541,7 +593,7 @@ footer {
     #afficher-plus {
         padding-left: 0;
     }
-    
+
     .populaires {
         height: auto;
         border-radius: 0px;
@@ -562,7 +614,9 @@ footer {
     #populaires {
         padding-left: 10%;
     }
-    
+
+/* SECTION ACTIVITES - version mobile */
+
     .activites {
         height: auto;
     }
@@ -575,7 +629,6 @@ footer {
     }
     .column-petit {
         width: 100%;
-        
     } 
     .fiche-grand { 
         height: 100%;
@@ -589,6 +642,8 @@ footer {
     .image-activite {
         height: 8em;
     }
+
+/* FOOTER - version mobile */
 
     footer {
         display: flex;
