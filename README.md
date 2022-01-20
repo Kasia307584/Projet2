@@ -1,4 +1,4 @@
-Transformez une maquette en site web
+**Transformez une maquette en site web**
 
 Scénario
 Enfin, vous avez trouvé votre premier stage en tant que développeur web chez Reservia, une
