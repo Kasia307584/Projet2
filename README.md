@@ -16,4 +16,4 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [See the live page here](https://www.github.com/Kasia307584/reservia-booking-website)
+- Live Site URL: [See the live page here](https://kasia307584.github.io/reservia-booking-website)
