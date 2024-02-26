@@ -4,7 +4,7 @@ This is a solution to the [OpenClassrooms](https://openclassrooms.com/) project.
 
 ### Screenshot
 
-![](./Design/Desktop - 1.png)
+![](/images/screenshot.png)
 
 ### The challenge
 
@@ -16,4 +16,4 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [See the live page here](https://github.com/Kasia307584/reservia-booking-website)
+- Live Site URL: [See the live page here](https://www.github.com/Kasia307584/reservia-booking-website)
