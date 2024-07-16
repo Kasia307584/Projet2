@@ -31,11 +31,11 @@ Users should be able to:
 
 - Specific use cases for `CSS Flexbox and Grid`(e.g., using Grid to devide the screen to blocs and Flex to control the behaviour of elements inside those blocs depending on viewport)
 - `media-queries` for responsive website
-- Inheritance concept in CSS
-- Specificity of selectors in CSS
-- HTML elements size units choice
+- The concept of inheritance in CSS
+- The specificity of selectors in CSS
+- Choosing size units for HTML elements
 - Use of icons (`Font Awesome`) and fonts (`Google Fonts`)
-- Structure CSS code - good practices (general elements at the beginning, group elements with the same properities, devide code by page sections and media queries)
+- Structure CSS code - good practices (general elements at the beginning, grouping elements with the same properties, dividing code by page sections and media queries)
 - CSS debugging with `Chrome DevTools`
 - Using the `W3C HTML validator` to check for errors and warnings
 - Using `Git` and `GitHub` for code version control
