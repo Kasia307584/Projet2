@@ -18,33 +18,33 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [See the live page here](https://kasia307584.github.io/reservia_booking-website/)
+- Live Site URL: [See the live page here](https://kasia307584.github.io/reservia-booking-website/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Flexbox and Grid
+- CSS3 Flexbox and Grid
 
 ### What I learned
 
-- Specific use cases for `CSS Flexbox and Grid`(e.g., using Grid to devide the screen to blocs and Flex to control the behaviour of elements inside those blocs depending on viewport)
+- specific use cases for `CSS Flexbox` and `CSS Grid`(e.g., using Grid to devide the screen to blocs and Flexbox to control the behaviour of elements inside those blocs depending on viewport)
 - `media-queries` for responsive website
-- The concept of inheritance in CSS
-- The specificity of selectors in CSS
-- Choosing size units for HTML elements
-- Use of icons (`Font Awesome`) and fonts (`Google Fonts`)
-- Structure CSS code - good practices (general elements at the beginning, grouping elements with the same properties, dividing code by page sections and media queries)
+- the concept of inheritance in CSS
+- the specificity of selectors in CSS
+- choosing size units for HTML elements (px, %, em, rem)
+- use of icons (`Font Awesome`) and fonts (`Google Fonts`)
+- structure CSS code - good practices (general elements at the beginning, grouping elements with the same properties, dividing code by page sections and media queries)
 - CSS debugging with `Chrome DevTools`
-- Using the `W3C HTML validator` to check for errors and warnings
-- Using `Git` and `GitHub` for code version control
-- Deployment to `GitHub Pages`
+- using the `W3C HTML validator` to check for errors and warnings
+- using `Git` and `GitHub` for code version control
+- deployment to `GitHub Pages`
 
 ### Continued development
 
-- Implement the BEM methodology in HTML elements
-- Use CSS custom properties (CSS variables) especially for colors and fonts throughout the website
-- Change CSS class names from French to English
-- Restyle using Sass
-- Rebuild the project in React
+- implement the BEM methodology in HTML elements
+- use CSS custom properties (CSS variables) especially for colors and fonts throughout the website
+- change CSS class names from French to English
+- restyle using Sass
+- rebuild the project in React
